@@ -38,7 +38,7 @@ var kvActionDelete;
                                 $cell.removeClass('kv-delete-cell');
                             },
                             error: function (xhr, status, error) {
-                                lib.alert('There was an error with your request.' + xhr.responseText);
+                                lib.alert(xhr.responseText);
                             }
                         }).done(function (data) {
                             $.pjax.reload({container: '#' + opts.pjaxContainer});
